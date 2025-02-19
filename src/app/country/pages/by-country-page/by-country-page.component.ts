@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
-import { CountryListComponent } from '../../../shared/components/country-list/country-list.component';
 import { CountrySearchInputComponent } from '../../../shared/components/country-search-input/country-search-input.component';
+import { CountryListComponent } from '../../../shared/components/country-list/country-list.component';
 
 @Component({
   standalone: true,
-  templateUrl: './by-capital-page.component.html',
   imports: [CountrySearchInputComponent, CountryListComponent],
+  templateUrl: './by-country-page.component.html',
 })
-export class ByCapitalPageComponent {
-  onSearch(value: string) {
-    console.log(value);
-  }
-}
+export class ByCountryPageComponent {}
